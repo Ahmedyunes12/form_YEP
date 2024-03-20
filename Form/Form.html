@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تقييم الدورة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form action="process_form.php" method="post">
+    <img id="im" src="2.png">
+<div class="SC">
+    <p id="sc">اسم الطالب:</p>
+    <p id="cs">اسم الدورة:</p>
+</div>
+<div class="inputs">
+    <input type="text" id="studentName" name="studentName" dir="rtl" required>
+    <input type="text" id="courseName" name="courseName" dir="rtl" required>
+</div>
+    <label for="rating">:تقييم الدورة (من 1 إلى 5)</label>
+    <input type="number" id="rating" name="rating" min="1" max="5" required>
+<!-- جدول التقييم -->
+    <table class="table">
+        <tbody>
+        <tr class="disable">
+          <td></td>
+          <td> راض تماماً </td>
+          <td> راض إلى حد ما </td>
+          <td> محايد  </td>
+          <td> غير راض إلى حد ما </td>
+          <td> غير راض نهائياً </td>
+        </tr>
+  <!-- Question 1 -->
+  <tr class="focus-trap" tabindex="1">
+    <th class="text-justify">سؤال 1</th>
+    <td><input type="radio" name="Q1" value="1" required=""></td>
+    <td><input type="radio" name="Q1" value="2" required=""></td>
+    <td><input type="radio" name="Q1" value="3" required=""></td>
+    <td><input type="radio" name="Q1" value="4" required=""></td>
+    <td><input type="radio" name="Q1" value="5" required=""></td>
+  </tr>
+
+  <!-- Question 2 -->
+  <tr class="focus-trap" tabindex="2">
+    <th class="text-justify">سؤال 2</th>
+    <td><input type="radio" name="Q2" value="1" required=""></td>
+    <td><input type="radio" name="Q2" value="2" required=""></td>
+    <td><input type="radio" name="Q2" value="3" required=""></td>
+    <td><input type="radio" name="Q2" value="4" required=""></td>
+    <td><input type="radio" name="Q2" value="5" required=""></td>
+  </tr>
+
+  <!-- Question 3 -->
+  <tr class="focus-trap" tabindex="3">
+    <th class="text-justify">سؤال 3</th>
+    <td><input type="radio" name="Q3" value="1" required=""></td>
+    <td><input type="radio" name="Q3" value="2" required=""></td>
+    <td><input type="radio" name="Q3" value="3" required=""></td>
+    <td><input type="radio" name="Q3" value="4" required=""></td>
+    <td><input type="radio" name="Q3" value="5" required=""></td>
+  </tr>
+
+  <!-- Question 4 -->
+  <tr class="focus-trap" tabindex="4">
+    <th class="text-justify">سؤال 4</th>
+    <td><input type="radio" name="Q4" value="1" required=""></td>
+    <td><input type="radio" name="Q4" value="2" required=""></td>
+    <td><input type="radio" name="Q4" value="3" required=""></td>
+    <td><input type="radio" name="Q4" value="4" required=""></td>
+    <td><input type="radio" name="Q4" value="5" required=""></td>
+  </tr>
+      </tbody>
+    </table>
+<!-- مربع لاضافة التعليقات الاضافية  -->
+<label for="comments">تعليقات إضافية:</label>
+<textarea id="comments" name="comments" rows="4" dir="rtl"></textarea>
+
+    <button type="submit">تقديم التقييم</button>
+
+</form>
+
+
+
+
+</body>
+</html>
